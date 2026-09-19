@@ -1,32 +1,14 @@
 <?php
 
-    //Importação do arquivo ContaBancaria.php
-    require_once 'ContaBancaria.php';
+    //Importação das classes
+    require_once 'Desenvolvedor.php';
+    require_once 'Funcionario.php';
+    require_once 'Gerente.php';
 
-    //Instanciação do objeto COM construtor
-    $conta1 = new ContaBancaria("Maria", 1000.00);
-
-    //Leitura dos dados
-    echo "=== DADOS DA CONTA ===<br/>";
-    echo "| Titular: " . $conta1->titular . "<br/>";
-    echo "| Saldo: " . $conta1->saldo . "<br/>";
-    echo "======================<br/>" . "<br/>";
-
-    //Simulação do erro
-    $conta1->saldo = -50000.00;
-
-    //Leitura dos dados
-    echo "=== DADOS DA CONTA ===<br/>";
-    echo "| Titular: " . $conta1->titular . "<br/>";
-    echo "| Saldo: " . $conta1->saldo . "<br/>";
-    echo "======================<br/>" . "<br/>";
-
-    /*
-        1. O PHP impediu a alteração do saldo para um valor negativo?
-        R = 
-
-        2. Que tipo de problema esssa liberdade de acesso direto pode causar em um sistema real?
-        R = 
-    */
-
+    $desenvolvedor = new Desenvolvedor("Carlos", "987.654.321-00", 3000, "Java");
+    $gerente = new Gerente("Bruno", "123.456.789-00", 4000, "Financeiro");
+    
+    $desenvolvedor->exibirDados();
+    $gerente->exibirDados();
+    
 ?>
