@@ -29,3 +29,6 @@
             echo "E-mail: " . $this->email . "<br/>";
         }
     }
+
+
+    

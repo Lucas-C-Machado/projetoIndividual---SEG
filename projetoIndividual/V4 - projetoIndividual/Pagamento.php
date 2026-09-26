@@ -39,3 +39,8 @@
             echo "Situação: " . ($this->pago ? "Pago" : "Pendente") . "<br>";
         }
     }
+
+
+
+
+    

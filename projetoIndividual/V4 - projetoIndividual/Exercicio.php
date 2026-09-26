@@ -19,3 +19,7 @@
             echo $this->nome . " - " . $this->series . " séries de " . $this->repeticoes . " repetições<br>";
         }
     }
+
+
+
+    

@@ -45,3 +45,5 @@
             echo "Status: " . ($this->ativo ? "Ativo" : "Inativo") . "<br>";
         }
     }
+
+    
